@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,900;1,300&display=swap');
 
 :root {
     --font-family: 'Roboto', sans-serif;
@@ -10,30 +10,164 @@
 
 html {
     font-family: 'Roboto', sans-serif;
+    font-size: 18px;
 }
 
 body {
     margin: 0;
 }
 
+article {
+    margin-bottom: 5rem;
+}
+
+h1 {
+    margin-bottom: 0;
+}
+
+p {
+    margin-top: 0.5rem;
+}
+
 header, 
 article.hero {
     background-color: var(--dark-blue);
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 0rem 15rem;
 }
 
 header h1,
 article.hero h1 {
     color: var(--white);
+    font-weight: 900;
 }
 
 header a,
 article.hero p {
     color: var(--light-gray);
     text-decoration: none;
+    font-size: 1rem;
 }
 
-header {
+header h1 {
+    font-size: 1.3rem; /* 24px */
+}
+
+header a {
+    padding-left: 1rem;
+}
+
+article.hero {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+article.hero section h1 {
+    font-size: 2.7rem; /* 48px */
+}
+
+article.hero img,
+article.hero section {
+    width: 48%;
+}
+
+article.hero input[type=button] {
+    color: var(--white);
+    height: 2.5rem;
+    width: 8rem;
+    background-color: var(--light-blue);
+    border: none;
+    border-radius: 10px;
+    font-weight: 900;
+    font-size: 1rem;
+}
+
+article.img-and-infos h1 {
+    font-size: 2rem; /* 36px */
+    font-weight: 900;
+    color: var(--dark-blue);
+    text-align: center;
+}
+
+article.img-and-infos section {
+    display: flex;
+    justify-content: center;
+}
+
+article.img-and-infos section div {
+    width: 200px;
+    margin: 2rem;
+}
+
+article.img-and-infos section div img {
+    width: 200px;
+    height: 200px;
+    border: 4px solid var(--light-blue);
+    border-radius: 13px;
+    object-fit: cover;
+}
+
+article.img-and-infos section div p {
+    text-align: center;
+}
+
+article.quote {
+    background-color: var(--light-gray);
+    padding: 6rem 24rem;
+}
+
+article.quote blockquote {
+    font-size: 2rem; /* 36px */
+    color: var(--dark-blue);
+    font-style: italic;
+    margin: 0;
+}
+
+article.quote figcaption,
+article.quote figcaption cite {
+    font-style: normal;
+    font-weight: 900;
+    text-align: right;
+}
+
+article.call-to-action {
+    background-color: var(--light-blue);
+    margin: 2rem 18rem;
+    padding: 2rem 7rem;
+    border-radius: 10px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+article.call-to-action h1,
+article.call-to-action p,
+article.call-to-action input[type=button] {
+    color: var(--white);
+}
+
+article.call-to-action input[type=button] {
+    height: 2.5rem;
+    width: 8rem;
+    background-color: var(--light-blue);
+    border: 2px solid var(--white);
+    border-radius: 10px;
+    font-weight: 900;
+    font-size: 1rem;
+}
+
+footer {
+    text-align: center;
+    background-color: var(--dark-blue);
+    color: var(--white);
+    margin-top: 5rem;
+    padding: 2rem;
+}
+
+footer a {
+    color: var(--white);
 }
