@@ -16,6 +16,22 @@ body {
     margin: 0;
 }
 
+header, 
+article.hero {
+    background-color: var(--dark-blue);
+}
+
+header h1,
+article.hero h1 {
+    color: var(--white);
+}
+
+header a,
+article.hero p {
+    color: var(--light-gray);
+    text-decoration: none;
+}
+
 header {
     display: flex;
     justify-content: space-between;
